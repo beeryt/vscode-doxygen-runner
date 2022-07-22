@@ -72,6 +72,11 @@
             "type": "boolean",
             "default": true,
             "description": "Whether the Generate Doxygen documentation command will automatically run View Doxygen documentation"
+          },
+          "doxygen_runner.generate_on_save": {
+            "type": "boolean",
+            "default": true,
+            "description": "Generate documentation on any file saved"
           }
         }
       }
