@@ -188,10 +188,10 @@ export function findDoxyFile(filepath: string) {
             base_dir = path.normalize(path.join(...base_dirs));
         }
 
-        if (!containsInputDirectories(base_dir, input_directories)) {
-            vscode.window.showWarningMessage("Possible configuration problem in your Doxyfile: " +
-                `Not all input directories could be found relative to ${base_dir}`);
-        }
+        // if (!containsInputDirectories(base_dir, input_directories)) {
+        //     vscode.window.showWarningMessage("Possible configuration problem in your Doxyfile: " +
+        //         `Not all input directories could be found relative to ${base_dir}`);
+        // }
 
         return [base_dir, config_file];
     }
